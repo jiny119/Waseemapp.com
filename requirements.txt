@@ -1,0 +1,6 @@
+full_story = ""
+for _ in range(10):  # 10 baar AI se text le
+    story_part = story_gen(f"{story_title} ki kahani aage barhti hai:", max_length=500, num_return_sequences=1)[0]["generated_text"]
+    full_story += story_part + "\n"
+
+story = full_story  # Final story
